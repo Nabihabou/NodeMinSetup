@@ -1,0 +1,25 @@
+{
+  "name": "nodeminsetup",
+  "version": "1.0.0",
+  "description": "A minimal setup with node, pug, stylus and angular",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aaneto/NodeMinSetup.git"
+  },
+  "author": "Adilson Neto",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aaneto/NodeMinSetup/issues"
+  },
+  "homepage": "https://github.com/aaneto/NodeMinSetup#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "express-stylus": "^0.1.0",
+    "nib": "^1.1.2",
+    "pug": "^2.0.0-beta6"
+  }
+}
