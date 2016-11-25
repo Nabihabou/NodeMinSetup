@@ -1,8 +1,10 @@
-var app = angular.module('sampleApp', []);
+var app = angular.module('sampleApp', ['ui.router']);
 
-app.controller('sampleController', function($scope) {
-  $scope.todos = [
-    {name: "Clean da houss", id: 0},
-    {name: "Clean da mess", id: 1}
-  ]
-})
+app.config(function($stateProvider, $urlRouterProvider) {
+  $stateProvider.state('home', {
+    url: '/home',
+    templateUrl: 'templates/home.html'
+  });
+
+  $urlRouterProvider.otherwise('/home');
+});

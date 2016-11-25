@@ -1,11 +1,10 @@
 doctype
-html(lang='en', ng-app="sampleApp")
+html(ng-app="sampleApp")
   head
     meta(charset='utf-8')
     script(src="js/angular.min.js")
+    script(src="js/angular-ui-router.min.js")
     script(src="js/app.js")
     title Sample App
-  body(ng-controller="sampleController")
-    ul
-      li(ng-repeat="todo in todos")
-        p {{todo.name}} in {{todo.id}}
+  body
+    ui-view

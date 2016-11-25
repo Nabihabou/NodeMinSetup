@@ -19,7 +19,13 @@
   "dependencies": {
     "express": "^4.14.0",
     "express-stylus": "^0.1.0",
+    "gulp-pug2": "0.0.1",
     "nib": "^1.1.2",
     "pug": "^2.0.0-beta6"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-pug": "^3.1.0",
+    "gulp-watch": "^4.3.11"
   }
 }
