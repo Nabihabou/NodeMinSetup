@@ -11,6 +11,7 @@ var pug = require('gulp-pug2');
 var app = express();
 
 gulp.task('default', function buildHTML() {
+  console.log("Compilando um template");
   return watch('public/templates/*', function() {
     return gulp.src(join(__dirname, 'public', 'templates', '*.pug'))
     .pipe(pug()).pipe(gulp.dest('public/templates'));
